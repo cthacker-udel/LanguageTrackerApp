@@ -1,3 +1,4 @@
+/* eslint-disable node/no-process-env -- disabled */
 /* eslint-disable react/jsx-no-useless-fragment -- disabled */
 /* eslint-disable require-await -- disabled */
 /* eslint-disable @typescript-eslint/no-explicit-any -- disabled for swr cache implementation */
@@ -23,7 +24,7 @@ root.render(
     <SWRConfig
         value={{
             fetcher: async (resource, init): Promise<Response> =>
-                fetch(`http://localhost:3001${resource}`, {
+                fetch(`${process.env.REACT_APP_API_URL}${resource}`, {
                     ...init,
                     credentials: "include",
                 }).then(
