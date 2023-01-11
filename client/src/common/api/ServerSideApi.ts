@@ -1,3 +1,4 @@
+/* eslint-disable node/no-process-env -- disabled */
 /* eslint-disable no-console -- disabled */
 /* eslint-disable @typescript-eslint/no-extraneous-class -- disabled */
 import { configuration, localConfiguration } from "../../config";
@@ -6,7 +7,8 @@ import { configuration, localConfiguration } from "../../config";
  * This is a Server-Side API wrapper class
  */
 export class ServerSideApi {
-    protected static BASE_URL = "http://localhost:3001/api";
+    protected static BASE_URL =
+        process.env.REACT_APP_API_URL ?? "http://localhost:3001/api";
 
     /**
      * Constructs an instance of the server side api
