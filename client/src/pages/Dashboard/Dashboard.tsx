@@ -73,7 +73,7 @@ const Dashboard = (): JSX.Element => {
     const navigate = useNavigate();
 
     const { data: activities, mutate } = useSwr<APICompliantActivity[]>(
-        `/api/activity/dashboard?currentday='${new Date().toDateString()}'`,
+        `/activity/dashboard?currentday='${new Date().toDateString()}'`,
     );
 
     const [sessionUsername, setSessionUsername] = React.useState<
