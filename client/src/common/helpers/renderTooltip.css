@@ -1,0 +1,13 @@
+.tooltip_content_button {
+    background-color: transparent;
+}
+
+.tooltip_content_button > .tooltip-inner {
+    background-color: transparent;
+}
+
+.tooltip_content_button > .tooltip-arrow {
+    color: transparent;
+    background-color: transparent;
+    visibility: hidden;
+}

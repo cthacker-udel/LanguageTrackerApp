@@ -1,0 +1,30 @@
+.sign_up_page_title {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.sign_up_page_layout {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.sign_up_page_form {
+    align-self: center;
+    width: 50%;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.sign_up_page_button_bar {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+
+.sign_up_page_button_bar > button {
+    width: 75%;
+}

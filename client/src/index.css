@@ -1,0 +1,19 @@
+/*
+Applies to ALL elements in the entire project!
+*/
+
+* {
+    font-family: "Kanit", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#root {
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100vw;
+    overflow: auto;
+}

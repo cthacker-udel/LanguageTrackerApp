@@ -1,0 +1,62 @@
+.login_page_layout {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.85);
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.5em;
+}
+
+.login_page_title {
+    width: fit-content;
+    text-align: center;
+    font-size: 1.75em;
+    align-self: center;
+}
+
+.login_form {
+    align-self: center;
+    width: 75%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+.login_page_form_layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: fit-content;
+    align-self: center;
+}
+
+.login_page_form_layout_label {
+    margin-right: 1em;
+    font-size: 1.15em;
+    align-self: center;
+}
+
+.login_page_form_layout_input {
+    border: 1px outset rgba(0, 0, 0, 0.25);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 1.05em;
+}
+
+.login_page_button_layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.login_page_login_button:disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 50%;
+}

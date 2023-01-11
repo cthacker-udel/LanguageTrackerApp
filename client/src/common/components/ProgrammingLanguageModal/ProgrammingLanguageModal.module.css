@@ -1,0 +1,16 @@
+.programming_language_modal_image {
+    height: 1.5em;
+    align-self: center;
+    margin-left: 0.25em;
+}
+
+.programming_language_modal_title {
+    display: flex;
+    flex-direction: row;
+}
+
+.programming_language_modal_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}

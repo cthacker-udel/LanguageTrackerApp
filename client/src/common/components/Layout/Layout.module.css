@@ -1,0 +1,14 @@
+.main_layout {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.children_layout {
+    width: 75%;
+    align-self: center;
+    position: relative;
+}
