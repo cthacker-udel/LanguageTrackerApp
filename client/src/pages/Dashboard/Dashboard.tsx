@@ -656,7 +656,6 @@ const Dashboard = (): JSX.Element => {
                     if (validDashboardKey !== undefined) {
                         triggerOverlay(validDashboardKey);
                     }
-                    const username = getUsername(document);
                     const addActivityResult =
                         await ServerSideApi.post<Response>(
                             "/activity/addActivity",
@@ -665,7 +664,6 @@ const Dashboard = (): JSX.Element => {
                                     ...values,
                                     type: key,
                                 } as ActivityData),
-                                username,
                             },
                         );
                     if (addActivityResult.status === 204) {
